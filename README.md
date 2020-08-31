@@ -1,2 +1,2 @@
-# tpl-a
-template-a
+# react-template
+react-template
