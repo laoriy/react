@@ -2,7 +2,7 @@
  * @Author: liuruijun
  * @Date: 2020-09-02 14:12:08
  * @LastEditors: liuruijun
- * @LastEditTime: 2020-09-04 17:12:03
+ * @LastEditTime: 2020-09-04 17:27:17
  * @Description: file content
  */
 const CUSTOME_UI = 'use another ui library'
@@ -19,7 +19,8 @@ const h5ask = [
   {
     type: 'confirm',
     message: 'project need redux?',
-    name: 'redux'
+    name: 'redux',
+    default: false
   },
   {
     type: 'input',
@@ -40,7 +41,8 @@ const pcask = [
   {
     type: 'confirm',
     message: 'project need redux?',
-    name: 'redux'
+    name: 'redux',
+    default: false
   },
   {
     type: 'input',
