@@ -46,9 +46,17 @@
     "react-dev-utils": "^10.2.1",
     "react-dom": "^16.13.1",
     "react-router-dom": "^5.2.0",
+    <% if (isH5) { %>
+    "fastclick": "^1.0.6",
+    <% } %>
+    <% if (needRedux) { %>
     "react-redux": "^7.2.0",
     "redux": "^4.0.5",
     "redux-thunk": "^2.3.0",
+    <% } %>
+    <% if (uiLibrary) { %>
+    "<%= uiLibrary %>": "^<%= uiVersion %>",
+    <% } %>
     "resolve": "1.15.0",
     "resolve-url-loader": "3.1.1",
     "sass-loader": "8.0.2",

@@ -9,7 +9,6 @@ const CUSTOME_UI = 'use another ui library'
 const deletePath = {
   h5: [],
   pc: ['src/assets/js/common.js', 'src/assets/less/hairline.less']
- 
 }
 const deleteFolder = {
   reduxfalse: ['src/redux']
@@ -19,7 +18,7 @@ const h5ask = [
   {
     type: 'confirm',
     message: 'project need redux?',
-    name: 'redux',
+    name: 'needRedux',
     default: false
   },
   {
@@ -41,7 +40,7 @@ const pcask = [
   {
     type: 'confirm',
     message: 'project need redux?',
-    name: 'redux',
+    name: 'needRedux',
     default: false
   },
   {
