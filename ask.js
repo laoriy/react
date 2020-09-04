@@ -2,7 +2,7 @@
  * @Author: liuruijun
  * @Date: 2020-09-02 14:12:08
  * @LastEditors: liuruijun
- * @LastEditTime: 2020-09-04 17:30:55
+ * @LastEditTime: 2020-09-04 18:17:16
  * @Description: file content
  */
 const CUSTOME_UI = 'use another ui library'
@@ -11,7 +11,7 @@ const deletePath = {
   pc: ['src/assets/js/common.js', 'src/assets/less/hairline.less']
 }
 const deleteFolder = {
-  reduxfalse: ['src/redux']
+  needReduxfalse: ['src/redux']
 }
 const compiles = ['js', 'json', 'vue', 'less']
 const h5ask = [
