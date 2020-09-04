@@ -2,7 +2,7 @@
  * @Author: liuruijun
  * @Date: 2020-09-02 14:12:08
  * @LastEditors: liuruijun
- * @LastEditTime: 2020-09-04 17:27:17
+ * @LastEditTime: 2020-09-04 17:28:34
  * @Description: file content
  */
 const CUSTOME_UI = 'use another ui library'
@@ -12,7 +12,7 @@ const deletePath = {
  
 }
 const deleteFolder = {
-  reduxtrue: ['src/redux']
+  reduxfalse: ['src/redux']
 }
 const compiles = ['js', 'json', 'vue', 'less']
 const h5ask = [
