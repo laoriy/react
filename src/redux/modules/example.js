@@ -2,23 +2,22 @@
  * @Author: liuruijun
  * @Date: 2020-06-08 19:12:39
  * @LastEditors: liuruijun
- * @LastEditTime: 2020-09-04 10:00:53
+ * @LastEditTime: 2020-09-04 15:01:38
  * @Description: file content
  */ 
 
-//initstate
+// 初始数据
 const initState = {
-  example:{}
+  example: {}
 }
-
-//types
+// types
 export const types = {
-  ADD_EXAMPLE:'EXAMPLE/ADD_EXAMPLE'
+  ADD_EXAMPLE: 'EXAMPLE/ADD_EXAMPLE'
 }
 
-//actions
+// actions
 export const actions = {
-  addExample: () =>({
+  addExample: () => ({
     type: types.ADD_EXAMPLE
   })
 }
@@ -33,9 +32,7 @@ const reducer = (state = initState, action) => {
   }
 }
 
-//selectors
-export const getExample = (state) => {
-  return state.example.example
-}
+// selectors
+export const getExample = (state) => state.example.example
 
 export default reducer

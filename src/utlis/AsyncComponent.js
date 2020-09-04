@@ -2,11 +2,11 @@
  * @Author: liuruijun
  * @Date: 2020-08-26 09:22:50
  * @LastEditors: liuruijun
- * @LastEditTime: 2020-08-26 09:48:23
+ * @LastEditTime: 2020-09-04 15:19:56
  * @Description: file content
  */
-import React from 'react';
-import { Component } from 'react';
+import React, { Component } from 'react'
+
 const asyncComponent = (importComponent) => {
   class AsyncComponent extends Component {
     constructor(props) {
@@ -15,13 +15,15 @@ const asyncComponent = (importComponent) => {
         component: null
       }
     }
-    async componentDidMount () {
+
+    async componentDidMount() {
       const { default: component } = await importComponent()
       this.setState({
         component
       })
     }
-    render () {
+
+    render() {
       const { component: C } = this.state
       return C ? <C {...this.props} /> : null
     }
@@ -30,4 +32,4 @@ const asyncComponent = (importComponent) => {
   return AsyncComponent
 }
 
-export default asyncComponent;
+export default asyncComponent

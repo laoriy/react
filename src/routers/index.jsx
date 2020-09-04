@@ -5,12 +5,12 @@ import AsyncComponent from '../utlis/AsyncComponent'
 const Home = AsyncComponent(() => import('../containers/Home/index'))
 
 export default class Router extends Component {
-  render () {
+  render() {
     return (
       <BrowserRouter>
-        <Switch >
-          <Route path="/" exact component={Home}></Route>
-          <Route path="*" component={Home}></Route>
+        <Switch>
+          <Route path="/" exact component={Home} />
+          <Route path="*" component={Home} />
         </Switch>
       </BrowserRouter>
     )
