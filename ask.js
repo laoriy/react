@@ -2,7 +2,7 @@
  * @Author: liuruijun
  * @Date: 2020-09-02 14:12:08
  * @LastEditors: liuruijun
- * @LastEditTime: 2020-09-07 15:47:01
+ * @LastEditTime: 2020-09-07 16:31:25
  * @Description: file content
  */
 const CUSTOME_UI = 'use another ui library'
@@ -52,7 +52,7 @@ const pcask = [
     type: 'list',
     name: 'uiLibrary',
     choices: [
-      'ant-design',
+      'antd',
       CUSTOME_UI
     ],
     message: 'Please choose a ui library'

@@ -14,7 +14,7 @@ import store from './redux/store'
 <% } %>
 import App from './containers/App/App'
 import './assets/less/reset.less'
-<% if (!isH5 && uiLibrary === 'ant-design') { %>
+<% if (!isH5 && uiLibrary === 'antd') { %>
 import 'antd/dist/antd.less'
 <% } %>
 
