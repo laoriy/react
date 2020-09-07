@@ -2,7 +2,7 @@
  * @Author: liuruijun
  * @Date: 2020-06-01 17:02:20
  * @LastEditors: liuruijun
- * @LastEditTime: 2020-09-04 18:10:10
+ * @LastEditTime: 2020-09-07 09:50:11
  * @Description: file content
  */
 
@@ -22,7 +22,7 @@ ReactDOM.render(
         <App />
     </Provider>,
     <% } else { %>
-    <App />
+    <App />,
     <% } %>
   document.getElementById('root')
 )
