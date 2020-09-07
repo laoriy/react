@@ -2,7 +2,7 @@
  * @Author: liuruijun
  * @Date: 2020-09-02 14:12:08
  * @LastEditors: liuruijun
- * @LastEditTime: 2020-09-04 18:17:16
+ * @LastEditTime: 2020-09-07 15:47:01
  * @Description: file content
  */
 const CUSTOME_UI = 'use another ui library'
@@ -30,7 +30,7 @@ const h5ask = [
     type: 'list',
     name: 'uiLibrary',
     choices: [
-      'ant-design-mobile',
+      'antd-mobile',
       CUSTOME_UI
     ],
     message: 'Please choose a ui library'
