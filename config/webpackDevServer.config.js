@@ -8,11 +8,16 @@ const ignoredFiles = require('react-dev-utils/ignoredFiles');
 const redirectServedPath = require('react-dev-utils/redirectServedPathMiddleware');
 const paths = require('./paths');
 const getHttpsConfig = require('./getHttpsConfig');
+const setStart = require('./setStart')
 
 const host = process.env.HOST || '0.0.0.0';
 const sockHost = process.env.WDS_SOCKET_HOST;
 const sockPath = process.env.WDS_SOCKET_PATH; // default: '/sockjs-node'
 const sockPort = process.env.WDS_SOCKET_PORT;
+
+const initEnv = 'http://<%=proxyIp%>' // 默认代理域名
+const target = `${setStart('env', initEnv)}`
+
 
 module.exports = function(proxy, allowedHost) {
   return {
@@ -112,7 +117,7 @@ module.exports = function(proxy, allowedHost) {
 
       if (fs.existsSync(paths.proxySetup)) {
         // This registers user provided middleware for proxy reasons
-        require(paths.proxySetup)(app);
+        require(paths.proxySetup)(app,target);
       }
     },
     after(app) {
