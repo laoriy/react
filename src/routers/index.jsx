@@ -7,7 +7,7 @@ const Home = AsyncComponent(() => import('../containers/Home/index'))
 export default class Router extends Component {
   render() {
     return (
-      <BrowserRouter>
+      <BrowserRouter basename="<%=projectName%>">
         <Switch>
           <Route path="/" exact component={Home} />
           <Route path="*" component={Home} />
